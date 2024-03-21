@@ -1,0 +1,6 @@
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.Helpers\bin\Debug\TWProject.Helpers.dll
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.Helpers\bin\Debug\TWProject.Helpers.pdb
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.Helpers\obj\Debug\TWProject.Helpers.csproj.AssemblyReference.cache
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.Helpers\obj\Debug\TWProject.Helpers.csproj.CoreCompileInputs.cache
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.Helpers\obj\Debug\TWProject.Helpers.dll
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.Helpers\obj\Debug\TWProject.Helpers.pdb
