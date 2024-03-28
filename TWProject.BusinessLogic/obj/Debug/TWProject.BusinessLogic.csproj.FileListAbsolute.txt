@@ -9,3 +9,23 @@ X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bi
 X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\obj\Debug\TWProject.BusinessLogic.csproj.CopyComplete
 X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\obj\Debug\TWProject.BusinessLogic.dll
 X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\obj\Debug\TWProject.BusinessLogic.pdb
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.BusinessLogic\bin\Debug\TWProject.BusinessLogic.dll.config
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.BusinessLogic\bin\Debug\TWProject.BusinessLogic.dll
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.BusinessLogic\bin\Debug\TWProject.BusinessLogic.pdb
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.BusinessLogic\bin\Debug\EntityFramework.dll
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.BusinessLogic\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.BusinessLogic\bin\Debug\TWProject.Domain.dll
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.BusinessLogic\bin\Debug\TWProject.Helpers.dll
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.BusinessLogic\bin\Debug\TWProject.Domain.pdb
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.BusinessLogic\bin\Debug\TWProject.Domain.dll.config
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.BusinessLogic\bin\Debug\TWProject.Helpers.pdb
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.BusinessLogic\bin\Debug\TWProject.Helpers.dll.config
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.BusinessLogic\bin\Debug\EntityFramework.xml
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.BusinessLogic\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.BusinessLogic\obj\Debug\TWProject.BusinessLogic.csproj.AssemblyReference.cache
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.BusinessLogic\obj\Debug\TWProject.BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.BusinessLogic\obj\Debug\TWProject.BusinessLogic.csproj.CopyComplete
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.BusinessLogic\obj\Debug\TWProject.BusinessLogic.dll
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.BusinessLogic\obj\Debug\TWProject.BusinessLogic.pdb
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.BusinessLogic\obj\Debug\TWProject.BusinessLogic.Migrations.InitialModel.resources
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.BusinessLogic\obj\Debug\TWProject.BusinessLogic.csproj.GenerateResource.cache

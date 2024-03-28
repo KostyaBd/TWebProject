@@ -11,6 +11,7 @@ namespace TWProject.Domain.Enums
 		Gasoline,
 		Diesel,
 		Hybrid,
+		PlugInHybrid,
 		Electric
 	}
 }

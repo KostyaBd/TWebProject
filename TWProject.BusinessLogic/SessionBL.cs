@@ -13,9 +13,12 @@ namespace TWProject.BusinessLogic
     {
         public ULoginResp UserLogin(ULoginData data)
         {
-            throw new NotImplementedException();
+            return UserLoginLogic(data);
         }
 
-       
+        public URegisterResp UserRegistration(URegisterData data)
+        {
+	        return UserRegistrationLogic(data);
+        }
     }
 }

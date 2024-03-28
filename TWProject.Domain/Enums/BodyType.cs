@@ -11,10 +11,15 @@ namespace TWProject.Domain.Enums
 		Van,
 		Universal,
 		Minivan,
+		Roadster,
 		SUV,
 		Cabriolet,
+		Microvan,
+		Pickup,
+		Coupe,
 		Sedan,
 		Crossover,
+		Combi,
 		Hatchback
 	}
 }
