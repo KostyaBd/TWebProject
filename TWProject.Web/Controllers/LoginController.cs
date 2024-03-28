@@ -38,15 +38,12 @@ namespace TWProject.Web.Controllers
                 {
                     Credential = login.Credential,
                     Password = login.Password,
-                    LoginIp = Request.UserHostAddress,
-                    LoginDateTime = DateTime.Now
                 };
 
                 var userLogin = _session.UserLogin(data);
                 if (userLogin.Status)
                 {
                     //ADD COOKIE
-
                     return RedirectToAction("Index", "Home");
                 }
                 else
@@ -55,7 +52,6 @@ namespace TWProject.Web.Controllers
                     return View();
                 }
             }
-
             return View();
         }
     }

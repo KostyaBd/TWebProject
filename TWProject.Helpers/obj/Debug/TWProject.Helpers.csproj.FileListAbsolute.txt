@@ -4,3 +4,15 @@ X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.Helpers\obj\Debu
 X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.Helpers\obj\Debug\TWProject.Helpers.csproj.CoreCompileInputs.cache
 X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.Helpers\obj\Debug\TWProject.Helpers.dll
 X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.Helpers\obj\Debug\TWProject.Helpers.pdb
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.Helpers\bin\Debug\TWProject.Helpers.dll.config
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.Helpers\bin\Debug\TWProject.Helpers.dll
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.Helpers\bin\Debug\TWProject.Helpers.pdb
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.Helpers\bin\Debug\EntityFramework.dll
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.Helpers\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.Helpers\bin\Debug\EntityFramework.xml
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.Helpers\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.Helpers\obj\Debug\TWProject.Helpers.csproj.AssemblyReference.cache
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.Helpers\obj\Debug\TWProject.Helpers.csproj.CoreCompileInputs.cache
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.Helpers\obj\Debug\TWProject.Helpers.csproj.CopyComplete
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.Helpers\obj\Debug\TWProject.Helpers.dll
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.Helpers\obj\Debug\TWProject.Helpers.pdb

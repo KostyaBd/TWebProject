@@ -10,5 +10,6 @@ namespace TWProject.BusinessLogic.Interfaces
     public interface ISession
     {
         ULoginResp UserLogin(ULoginData data);
-    }
+		URegisterResp UserRegistration(URegisterData data);
+	}
 }

@@ -7,3 +7,18 @@ X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.Domain\obj\Debug
 X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.Domain\obj\Debug\TWProject.Domain.csproj.CopyComplete
 X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.Domain\obj\Debug\TWProject.Domain.dll
 X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.Domain\obj\Debug\TWProject.Domain.pdb
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.Domain\bin\Debug\TWProject.Domain.dll.config
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.Domain\bin\Debug\TWProject.Domain.dll
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.Domain\bin\Debug\TWProject.Domain.pdb
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.Domain\bin\Debug\EntityFramework.dll
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.Domain\bin\Debug\TWProject.Helpers.dll
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.Domain\bin\Debug\TWProject.Helpers.pdb
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.Domain\bin\Debug\TWProject.Helpers.dll.config
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.Domain\bin\Debug\EntityFramework.xml
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.Domain\obj\Debug\TWProject.Domain.csproj.AssemblyReference.cache
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.Domain\obj\Debug\TWProject.Domain.csproj.CoreCompileInputs.cache
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.Domain\obj\Debug\TWProject.Domain.csproj.CopyComplete
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.Domain\obj\Debug\TWProject.Domain.dll
+C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.Domain\obj\Debug\TWProject.Domain.pdb
