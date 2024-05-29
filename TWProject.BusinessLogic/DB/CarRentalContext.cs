@@ -14,7 +14,8 @@ namespace TWProject.BusinessLogic.DB
 	{
 		public CarRentalContext() :base("name=CarRental")
 		{
-		}
+            Database.SetInitializer(new CreateDatabaseIfNotExists<CarRentalContext>());
+        }
 
 		public virtual DbSet<UDBTable> User { get; set; }
 		public virtual DbSet<CarDBTable> Cars { get; set; }

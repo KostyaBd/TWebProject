@@ -1,0 +1,117 @@
+﻿@model IEnumerable<TWProject.Domain.Entities.Car.CarDBTable>
+
+@{
+    ViewBag.Title = "Car List";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="col-lg-10" style="margin-top: 100px;">
+            <!-- Add margin-top -->
+            <h2>@ViewBag.Title</h2>
+            <p>
+                @Html.ActionLink("Add new car", "Create")
+            </p>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Mark)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Model)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.ProductionYear)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.BodyType)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.SeatsNum)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Color)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Odometer)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.EnginePower)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.EngineCapacity)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.PricePerDay)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.GearboxType)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.FuelType)
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Mark)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Model)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.ProductionYear)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.BodyType)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.SeatsNum)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Color)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Odometer)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.EnginePower)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.EngineCapacity)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.PricePerDay)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.GearboxType)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.FuelType)
+                            </td>
+                            <td>
+                                @Html.ActionLink("Edit", "Edit", new { id = item.CarId })
+                                @Html.ActionLink("Details", "Details", new { id = item.CarId })
+                                @Html.ActionLink("Delete", "Delete", new { id = item.CarId })
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,18 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Runtime.ConstrainedExecution;
 using System.Text;
 using System.Threading.Tasks;
 using TWProject.Domain.Entities.Car;
+using TWProject.Domain.Enums;
 
 namespace TWProject.Domain.Entities.User
 {
 	public class UDBTable
 	{
 		[Key]
-		public int UserId { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int UserId { get; set; }
 		[Required]
 		public string Name { get; set; }
 		[Required]
@@ -25,5 +28,7 @@ namespace TWProject.Domain.Entities.User
 		public decimal TotalPaid { get; set; }
 		public bool IsVerified { get; set; }
 		public CarDBTable Car { get; set; }
-	}
+
+        public URoles level { get; set; }
+    }
 }
