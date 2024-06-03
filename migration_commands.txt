@@ -1,0 +1,8 @@
+--enable
+Enable-Migrations -MigrationsDirectory "Migrations\CarRentalContext" -ContextTypeName TWProject.BusinessLogic.DB.CarRentalContext
+
+--add migration
+Add-Migration -ConfigurationTypeName ConfigurationCarRental
+
+-update
+Update-Database -ConfigurationTypeName ConfigurationCarRental

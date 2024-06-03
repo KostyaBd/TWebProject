@@ -5,11 +5,13 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using TWProject.Attributes;
 using TWProject.BusinessLogic.DB;
 using TWProject.Domain.Entities.Car;
 
 namespace TWProject.Web.Controllers
 {
+    [AdminMod]
     public class AdminController : Controller
     {
         private CarRentalContext db = new CarRentalContext();
@@ -37,7 +39,6 @@ namespace TWProject.Web.Controllers
         {
             return View();
         }
-
 
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -67,7 +68,6 @@ namespace TWProject.Web.Controllers
             return View(carDBTable);
         }
 
-
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "CarId,Mark,Model,ProductionYear,BodyType,SeatsNum,Color,Odometer,EnginePower,EngineCapacity,PricePerDay,GearboxType,FuelType")] CarDBTable carDBTable)
@@ -94,7 +94,6 @@ namespace TWProject.Web.Controllers
             }
             return View(carDBTable);
         }
-
 
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
