@@ -3,55 +3,55 @@
 <html lang="en">
 
 <head>
-     <title>CarRental</title>
-     <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>CarRental</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
 
-     @Styles.Render("~/bundles/icomoon/css")
+    @Styles.Render("~/bundles/icomoon/css")
 
-     @Styles.Render("~/bundles/bootstrap/css")
-     @Styles.Render("~/bundles/bootstrap-datepicker/css")
-     @Styles.Render("~/bundles/jquery/css")
-     @Styles.Render("~/bundles/owl-carousel/css")
-     @Styles.Render("~/bundles/owl-default/css")
-     @Styles.Render("~/bundles/flaticon/css")
-     @Styles.Render("~/bundles/aos/css")
+    @Styles.Render("~/bundles/bootstrap/css")
+    @Styles.Render("~/bundles/bootstrap-datepicker/css")
+    @Styles.Render("~/bundles/jquery/css")
+    @Styles.Render("~/bundles/owl-carousel/css")
+    @Styles.Render("~/bundles/owl-default/css")
+    @Styles.Render("~/bundles/flaticon/css")
+    @Styles.Render("~/bundles/aos/css")
 
-     <!-- MAIN CSS -->
-     @Styles.Render("~/bundles/style/css")
+    <!-- MAIN CSS -->
+    @Styles.Render("~/bundles/style/css")
 
 </head>
 
 <body>
-     <div class="site-wrap" id="home-section">
+    <div class="site-wrap" id="home-section">
 
-          <header class="site-navbar site-navbar-target" role="banner">
-               @Html.Partial("_Header")
-          </header>
+        <header class="site-navbar site-navbar-target" role="banner">
+            @Html.Partial("_Header")
+        </header>
 
-          @RenderBody()
+        @RenderBody()
 
-          <footer class="site-footer">
-               @Html.Partial("_Footer")
-          </footer>
+        <footer class="site-footer">
+            @Html.Partial("_Footer")
+        </footer>
 
-     </div>
+    </div>
 
-     @Scripts.Render("~/bundles/jquery/js")
-     @Scripts.Render("~/bundles/popper/js")
-     @Scripts.Render("~/bundles/bootstrap/js")
-     @Scripts.Render("~/bundles/owl-carousel/js")
-     @Scripts.Render("~/bundles/jquery-sticky/js")
-     @Scripts.Render("~/bundles/jquery-waypoints/js")
-     @Scripts.Render("~/bundles/jquery-animate/js")
-     @Scripts.Render("~/bundles/jquery-fancybox/js")
-     @Scripts.Render("~/bundles/jquery-easing/js")
-     @Scripts.Render("~/bundles/bootstrap-datepicker/js")
-     @Scripts.Render("~/bundles/aos/js")
+    @Scripts.Render("~/bundles/jquery/js")
+    @Scripts.Render("~/bundles/popper/js")
+    @Scripts.Render("~/bundles/bootstrap/js")
+    @Scripts.Render("~/bundles/owl-carousel/js")
+    @Scripts.Render("~/bundles/jquery-sticky/js")
+    @Scripts.Render("~/bundles/jquery-waypoints/js")
+    @Scripts.Render("~/bundles/jquery-animate/js")
+    @Scripts.Render("~/bundles/jquery-fancybox/js")
+    @Scripts.Render("~/bundles/jquery-easing/js")
+    @Scripts.Render("~/bundles/bootstrap-datepicker/js")
+    @Scripts.Render("~/bundles/aos/js")
 
-     @Scripts.Render("~/bundles/main/js")
-     @RenderSection("scripts", required: false)
+    @Scripts.Render("~/bundles/main/js")
+    @RenderSection("scripts", required: false)
 </body>
 </html>
