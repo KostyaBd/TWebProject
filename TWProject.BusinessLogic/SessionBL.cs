@@ -1,32 +1,28 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using System.Web;
 using TWProject.Domain.Entities.User;
 using TWProject.BusinessLogic.Core;
 using TWProject.BusinessLogic.Interfaces;
+using System;
 
 namespace TWProject.BusinessLogic
 {
-    public class SessionBL : UserApi, TWProject.BusinessLogic.Interfaces.ISession
+    public class SessionBL : UserApi, ISession
     {
-        private readonly IHttpContextAccessor _httpContextAccessor;
-
-        public SessionBL(IHttpContextAccessor httpContextAccessor) : base(httpContextAccessor) 
+        public ULoginResp UserLogin(ULoginData uLoginData)
         {
-            _httpContextAccessor = httpContextAccessor;
+            return UserLoginLogic(uLoginData);
         }
 
-        public ULoginResp UserLogin(ULoginData data)
+        public URegisterResp UserRegistration(URegisterData uRegisterData)
         {
-            return UserLoginLogic(data);
+            ULoginResp loginResp = UserRegistrationLogic(uRegisterData);
+            URegisterResp registerResp = new URegisterResp { Status = loginResp.Status, StatusMsg = loginResp.StatusMsg };
+            return registerResp;
         }
 
-        public URegisterResp UserRegistration(URegisterData data)
+        public HttpCookie GenCookie(string loginCredential)
         {
-            return UserRegistrationLogic(data);
-        }
-
-        public (string Value, CookieOptions Options) GenCookie(string loginCredential)
-        {
-            return CreateCookie(loginCredential);
+            return Cookie(loginCredential);
         }
 
         public UserMini GetUserByCookie(string apiCookieValue)

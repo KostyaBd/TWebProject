@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.UI;
+using TWProject.BusinessLogic;
+using TWProject.BusinessLogic.Core;
 using TWProject.BusinessLogic.Interfaces;
 using TWProject.Domain.Entities.User;
 using TWProject.Web.Models;
@@ -13,16 +15,10 @@ namespace TWProject.Web.Controllers
 {
     public class RegisterController : Controller
     {
-        private readonly TWProject.BusinessLogic.Interfaces.ISession _session;
-
+        private readonly UserApi _userApi;
         public RegisterController()
         {
-
-        }
-        public RegisterController(IHttpContextAccessor httpContextAccessor)
-        {
-            var bl = new TWProject.BusinessLogic.BusinessLogic(httpContextAccessor);
-            _session = bl.GetSessionBL();
+            _userApi = new UserApi();
         }
         // GET: Register
         public ActionResult Index()
@@ -30,6 +26,7 @@ namespace TWProject.Web.Controllers
             return View();
         }
 
+        //POSt
         [HttpPost]
         public ActionResult Index(UserRegister register)
         {
@@ -41,16 +38,16 @@ namespace TWProject.Web.Controllers
                     Password = register.Password,
                     Email = register.Email
                 };
-                /*var userRegister = _session.UserRegistration(data);
+                var userRegister = _userApi.UserRegistrationLogic(data);
                 if (userRegister.Status)
                 {
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Index", "Login");
                 }
                 else
                 {
                     ViewBag.ErrorMessage = "Registraion failed. Please try again";
-                    return View(register);
-                }*/
+                    return RedirectToAction("Index", "Register");
+                }
             }
             return View(register);
         }

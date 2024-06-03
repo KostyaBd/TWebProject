@@ -1,0 +1,118 @@
+﻿@model TWProject.Domain.Entities.Car.CarDBTable
+
+@{
+    ViewBag.Title = "Admin Panel";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+<div class="container">
+    <div class="col-lg-10" style="margin-top: 100px;">
+        <div>
+            <h4>Car details</h4>
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Mark)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Mark)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Model)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Model)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.ProductionYear)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.ProductionYear)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.BodyType)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.BodyType)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.SeatsNum)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.SeatsNum)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Color)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Color)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Odometer)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Odometer)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.EnginePower)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.EnginePower)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.EngineCapacity)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.EngineCapacity)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.PricePerDay)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.PricePerDay)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.GearboxType)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.GearboxType)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.FuelType)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.FuelType)
+                </dd>
+
+            </dl>
+        </div>
+        <p>
+            @Html.ActionLink("Edit", "Edit", new { id = Model.CarId }) |
+            @Html.ActionLink("Back to List", "Index")
+        </p>
+    </div>
+</div>

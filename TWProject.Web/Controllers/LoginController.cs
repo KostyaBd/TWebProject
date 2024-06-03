@@ -2,83 +2,89 @@
 using TWProject.BusinessLogic;
 using TWProject.BusinessLogic.Interfaces;
 using TWProject.Domain.Entities.User;
+using TWProject.Domain.Enums; // Ensure this is included
 using System;
-using System.Linq;
 using System.Security.Authentication;
 using System.Web;
 using System.Web.Mvc;
 using AutoMapper;
 
-using Microsoft.AspNetCore.Http;
-using TWProject.BusinessLogic.DB;
-
-namespace TWProject.Web.Controllers
+namespace TWProject.Controllers
 {
     public class LoginController : Controller
     {
-        private readonly TWProject.BusinessLogic.Interfaces.ISession _session;
-        private readonly CarRentalContext _context = new CarRentalContext();
+        private readonly ISession _session;
 
         public LoginController()
         {
-            
-        }
-        public LoginController(IHttpContextAccessor httpContextAccessor)
-        {
-            var bl = new TWProject.BusinessLogic.BusinessLogic(httpContextAccessor);
+            var bl = new TWProject.BusinessLogic.BusinessLogic();
             _session = bl.GetSessionBL();
         }
+
         public ActionResult Index()
         {
             return View();
         }
-        // GET: Login
+
         [HttpPost]
-        //[ValidateAntiForgeryToken]
+        [ValidateAntiForgeryToken]
         public ActionResult Index(UserLogin login)
         {
             if (ModelState.IsValid)
             {
                 var config = new MapperConfiguration(cfg => cfg.CreateMap<UserLogin, ULoginData>());
                 var mapper = config.CreateMapper();
-                var data = mapper.Map<ULoginData>(login);
+
+                ULoginData data = new ULoginData
+                {
+                    Credential = login.Credential,
+                    Password = login.Password,
+                };
 
                 var userLogin = _session.UserLogin(data);
 
-                if (userLogin == null)
-                {
-                    throw new AuthenticationException("ERROR. No login response!");
-                }
-
                 if (userLogin.Status)
                 {
-                    // Generating cookie for the current session
-                    var apiCookie = _session.GenCookie(login.Credential);
-                    var cookie = new HttpCookie("X-KEY", apiCookie.Value);
-
-                    if (apiCookie.Options.Expires.HasValue)
-                    {
-                        cookie.Expires = apiCookie.Options.Expires.Value.DateTime;
-                    }
-
+                    HttpCookie cookie = _session.GenCookie(login.Credential);
+                    cookie.HttpOnly = true; 
+                    cookie.Expires = DateTime.Now.AddHours(1); 
                     ControllerContext.HttpContext.Response.Cookies.Add(cookie);
 
-                    return RedirectToAction("Index", "Home");
+                   
+                    if (userLogin.Role == URoles.Admin)
+                    {
+                        return RedirectToAction("Index", "Admin");
+                    }
+                    else
+                    {
+                        return RedirectToAction("Index", "Home");
+                    }
                 }
                 else
                 {
-                    // Autentificare nereusita
                     ModelState.AddModelError("", userLogin.StatusMsg);
-                    return View("Login", login); ;
+                    return View("Login"); 
                 }
             }
 
-
-            return RedirectToAction("Index", "Home");
+            return View("Index");
         }
+
         public UserMini GetUserDetails(string authToken)
         {
             return _session.GetUserByCookie(authToken);
+        }
+
+        public ActionResult Logout()
+        {
+            if (Request.Cookies["X-KEY"] != null)
+            {
+                var cookie = new HttpCookie("X-KEY");
+                cookie.Expires = DateTime.Now.AddDays(-1); 
+                Response.Cookies.Add(cookie); 
+            }
+
+            return RedirectToAction("Index", "Home");
         }
     }
 }

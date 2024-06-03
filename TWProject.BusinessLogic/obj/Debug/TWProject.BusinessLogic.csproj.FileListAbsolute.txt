@@ -19,8 +19,6 @@ C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.BusinessLogic\obj\Debug\TW
 C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.BusinessLogic\obj\Debug\TWProject.BusinessLogic.Migrations.InitialModel.resources
 C:\Users\rusum\Documents\GitHub\TWebProject\TWProject.BusinessLogic\obj\Debug\TWProject.BusinessLogic.csproj.GenerateResource.cache
 X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\obj\Debug\TWProject.BusinessLogic.csproj.AssemblyReference.cache
-X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\obj\Debug\TWProject.BusinessLogic.Migrations.InitialModel.resources
-X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\obj\Debug\TWProject.BusinessLogic.csproj.GenerateResource.cache
 X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\obj\Debug\TWProject.BusinessLogic.csproj.CoreCompileInputs.cache
 X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\TWProject.BusinessLogic.dll.config
 X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\TWProject.BusinessLogic.dll
@@ -60,9 +58,6 @@ X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bi
 X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\EntityFramework.dll
 X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\EntityFramework.SqlServer.dll
 X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\JetBrains.Annotations.dll
-X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.dll
-X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\Microsoft.AspNetCore.Http.dll
-X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\Microsoft.AspNetCore.Http.Features.dll
 X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\Microsoft.AspNetCore.WebUtilities.dll
 X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
@@ -90,9 +85,6 @@ X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bi
 X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\EntityFramework.xml
 X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\EntityFramework.SqlServer.xml
 X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\JetBrains.Annotations.xml
-X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\Microsoft.AspNetCore.Http.xml
-X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.xml
-X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\Microsoft.AspNetCore.Http.Features.xml
 X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\Microsoft.AspNetCore.WebUtilities.xml
 X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
@@ -110,4 +102,28 @@ X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bi
 X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\obj\Debug\TWProject.BusinessLogic.csproj.CopyComplete
 X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\obj\Debug\TWProject.BusinessLogic.dll
 X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\obj\Debug\TWProject.BusinessLogic.pdb
-X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\obj\Debug\TWProject.BusinessLogic.Migrations.InitialReCreate.resources
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\Hangfire.Core.dll
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\Hangfire.SqlServer.dll
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\Microsoft.Owin.dll
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\Hangfire.Core.xml
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\Hangfire.SqlServer.xml
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\Microsoft.Owin.xml
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\ca\Hangfire.Core.resources.dll
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\de\Hangfire.Core.resources.dll
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\es\Hangfire.Core.resources.dll
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\fa\Hangfire.Core.resources.dll
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\fr\Hangfire.Core.resources.dll
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\nb\Hangfire.Core.resources.dll
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\nl\Hangfire.Core.resources.dll
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\pt\Hangfire.Core.resources.dll
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\pt-BR\Hangfire.Core.resources.dll
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\pt-PT\Hangfire.Core.resources.dll
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\sv\Hangfire.Core.resources.dll
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\tr-TR\Hangfire.Core.resources.dll
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\zh\Hangfire.Core.resources.dll
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\zh-TW\Hangfire.Core.resources.dll
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\obj\Debug\TWProject.BusinessLogic.Migrations.CarRentalContext.upd1.resources
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\obj\Debug\TWProject.BusinessLogic.csproj.GenerateResource.cache
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\obj\Debug\TWProject.BusinessLogic.Migrations.SessionContext.upd11.resources
