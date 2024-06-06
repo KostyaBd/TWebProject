@@ -168,6 +168,8 @@ header {
                             </th>
                             <th>
                                 @Html.DisplayNameFor(model => model.FuelType)
+                            </th><th>
+                                @Html.DisplayNameFor(model => model.IsAvailable)
                             </th>
                             <th></th>
                         </tr>
@@ -211,6 +213,8 @@ header {
                                 </td>
                                 <td>
                                     @Html.DisplayFor(modelItem => item.FuelType)
+                                </td><td>
+                                    @Html.DisplayFor(modelItem => item.IsAvailable)
                                 </td>
                                 <td>
                                     @Html.ActionLink("Edit", "Edit", new { id = item.CarId })

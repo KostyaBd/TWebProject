@@ -120,8 +120,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\Booking\BookingDBTable.cs" />
+    <Compile Include="Entities\Booking\UBookingResp.cs" />
     <Compile Include="Entities\Car\CarDBTable.cs" />
+    <Compile Include="Entities\Payment\PaymentModel.cs" />
     <Compile Include="Entities\User\Session.cs" />
+    <Compile Include="Entities\User\UBookingData.cs" />
     <Compile Include="Entities\User\UDBTable.cs" />
     <Compile Include="Entities\User\ULoginData.cs" />
     <Compile Include="Entities\User\ULoginResp.cs" />

@@ -10,6 +10,5 @@ namespace TWProject.Domain.Enums
 	{
 		Automatic,
 		Manual,
-		Robot
 	}
 }

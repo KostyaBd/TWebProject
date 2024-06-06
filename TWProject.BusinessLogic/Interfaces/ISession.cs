@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using TWProject.Domain.Entities.User;
 using System.Web;
+using TWProject.Domain.Entities.Booking;
+using TWProject.Domain.Entities.Car;
 
 namespace TWProject.BusinessLogic.Interfaces
 {
@@ -17,5 +19,11 @@ namespace TWProject.BusinessLogic.Interfaces
 
         UserMini GetUserByCookie(string apiCookieValue);
 
-    }
+        IEnumerable<CarDBTable> GetAllCars();
+
+        IEnumerable<BookingDBTable> GetBookingDates();
+
+        Task<UBookingResp> UserBooking(UBookingData data);
+
+	}
 }

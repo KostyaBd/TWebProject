@@ -1,6 +1,7 @@
 ﻿
 @{
     ViewBag.Title = "_Header";
+    var loginStatus = System.Web.HttpContext.Current.Session["LoginStatus"] as string;
 }
 
 <div class="container">
@@ -13,21 +14,26 @@
         </div>
 
         <div class="col-9  text-right">
-
             <span class="d-inline-block d-lg-none"><a href="#" class=" site-menu-toggle js-menu-toggle py-5 "><span class="icon-menu h3 text-black"></span></a></span>
 
             <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
                 <ul class="site-menu main-menu js-clone-nav ml-auto ">
                     <li class="active"><a href="@Url.Action("Index","Home")" class="nav-link">Home</a></li>
-                    <li><a href="@Url.Action("Listing","Home")" class="nav-link">Listing</a></li>
+                    <li><a href="@Url.Action("Index","Listing")" class="nav-link">Listing</a></li>
+                    <li><a href="@Url.Action("Index","Booking")" class="nav-link">Booking</a></li>
                     <li><a href="@Url.Action("About","Home")" class="nav-link">About</a></li>
                     <li><a href="@Url.Action("Contact","Home")" class="nav-link">Contact</a></li>
+                    @if (loginStatus != "login")
+                    {
                     <li><a href="@Url.Action("Index","Login")" class="nav-link">Log in</a></li>
+                    }
+                    @if (loginStatus == "login")
+                    { 
+                        <li><a href="@Url.Action("Logout","Login")" class="nav-link">Log out</a></li>
+                    }
                 </ul>
             </nav>
         </div>
-
-
     </div>
 </div>
 

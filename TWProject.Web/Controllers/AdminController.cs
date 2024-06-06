@@ -7,6 +7,7 @@ using System.Web;
 using System.Web.Mvc;
 using TWProject.Attributes;
 using TWProject.BusinessLogic.DB;
+using TWProject.BusinessLogic.Interfaces;
 using TWProject.Domain.Entities.Car;
 
 namespace TWProject.Web.Controllers
@@ -14,11 +15,11 @@ namespace TWProject.Web.Controllers
     [AdminMod]
     public class AdminController : Controller
     {
-        private CarRentalContext db = new CarRentalContext();
-
+	    private CarRentalContext db = new CarRentalContext();
+       
         public ActionResult Index()
         {
-            return View(db.Cars.ToList());
+	        return View(db.Cars.ToList());
         }
 
         public ActionResult Details(int? id)
@@ -42,7 +43,7 @@ namespace TWProject.Web.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "CarId,Mark,Model,ProductionYear,BodyType,SeatsNum,Color,Odometer,EnginePower,EngineCapacity,PricePerDay,GearboxType,FuelType")] CarDBTable carDBTable)
+        public ActionResult Create([Bind(Include = "CarId,Mark,Model,ProductionYear,BodyType,SeatsNum,Color,Odometer,EnginePower,EngineCapacity,PricePerDay,GearboxType,FuelType,ImagePath,IsAvailable")] CarDBTable carDBTable)
         {
             if (ModelState.IsValid)
             {
@@ -70,7 +71,7 @@ namespace TWProject.Web.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "CarId,Mark,Model,ProductionYear,BodyType,SeatsNum,Color,Odometer,EnginePower,EngineCapacity,PricePerDay,GearboxType,FuelType")] CarDBTable carDBTable)
+        public ActionResult Edit([Bind(Include = "CarId,Mark,Model,ProductionYear,BodyType,SeatsNum,Color,Odometer,EnginePower,EngineCapacity,PricePerDay,GearboxType,FuelType,ImagePath,IsAvailable")] CarDBTable carDBTable)
         {
             if (ModelState.IsValid)
             {

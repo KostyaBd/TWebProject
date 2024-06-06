@@ -55,6 +55,9 @@
     <Reference Include="Microsoft.AspNetCore.WebUtilities, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNetCore.WebUtilities.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.WebUtilities.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.1.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\lib\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
@@ -79,11 +82,20 @@
     <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.5.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=105.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.105.0.1\lib\net4\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Stripe, Version=1.12.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stripe.1.12.0\lib\net40\Stripe.dll</HintPath>
+    </Reference>
+    <Reference Include="Stripe.net, Version=44.10.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stripe.net.44.10.0\lib\net461\Stripe.net.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -93,6 +105,7 @@
       <HintPath>..\packages\System.ComponentModel.Annotations.4.5.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Memory, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Memory.4.5.1\lib\netstandard2.0\System.Memory.dll</HintPath>
@@ -101,16 +114,25 @@
     <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
     </Reference>
-    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.1\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System.Text.Encodings.Web, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Text.Encodings.Web.4.5.0\lib\netstandard2.0\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.2\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
     </Reference>
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -126,6 +148,34 @@
     <Compile Include="Migrations\CarRentalContext\202406021038029_upd1.designer.cs">
       <DependentUpon>202406021038029_upd1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\CarRentalContext\202406031810207_ModifyUserTable.cs" />
+    <Compile Include="Migrations\CarRentalContext\202406031810207_ModifyUserTable.Designer.cs">
+      <DependentUpon>202406031810207_ModifyUserTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\CarRentalContext\202406032041121_ChangedEnginePowerType.cs" />
+    <Compile Include="Migrations\CarRentalContext\202406032041121_ChangedEnginePowerType.Designer.cs">
+      <DependentUpon>202406032041121_ChangedEnginePowerType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\CarRentalContext\202406032042194_PopulateCarTable.cs" />
+    <Compile Include="Migrations\CarRentalContext\202406032042194_PopulateCarTable.Designer.cs">
+      <DependentUpon>202406032042194_PopulateCarTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\CarRentalContext\202406041954065_AddImagePathCarTable.cs" />
+    <Compile Include="Migrations\CarRentalContext\202406041954065_AddImagePathCarTable.Designer.cs">
+      <DependentUpon>202406041954065_AddImagePathCarTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\CarRentalContext\202406041958527_AddImagePathCarTable2.cs" />
+    <Compile Include="Migrations\CarRentalContext\202406041958527_AddImagePathCarTable2.Designer.cs">
+      <DependentUpon>202406041958527_AddImagePathCarTable2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\CarRentalContext\202406042006426_ChangedCapacity.cs" />
+    <Compile Include="Migrations\CarRentalContext\202406042006426_ChangedCapacity.Designer.cs">
+      <DependentUpon>202406042006426_ChangedCapacity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\CarRentalContext\202406042114039_AddedCarAvailability.cs" />
+    <Compile Include="Migrations\CarRentalContext\202406042114039_AddedCarAvailability.Designer.cs">
+      <DependentUpon>202406042114039_AddedCarAvailability.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\CarRentalContext\ConfigurationCarRental.cs" />
     <Compile Include="Migrations\SessionContext\202406021039486_upd11.cs" />
     <Compile Include="Migrations\SessionContext\202406021039486_upd11.designer.cs">
@@ -133,7 +183,6 @@
     </Compile>
     <Compile Include="Migrations\SessionContext\ConfigurationSession.cs" />
     <Compile Include="SessionBL.cs" />
-    <Compile Include="Core\AdminApi.cs" />
     <Compile Include="Core\UserApi.cs" />
     <Compile Include="Interfaces\ISession.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -155,6 +204,27 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\CarRentalContext\202406021038029_upd1.resx">
       <DependentUpon>202406021038029_upd1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\CarRentalContext\202406031810207_ModifyUserTable.resx">
+      <DependentUpon>202406031810207_ModifyUserTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\CarRentalContext\202406032041121_ChangedEnginePowerType.resx">
+      <DependentUpon>202406032041121_ChangedEnginePowerType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\CarRentalContext\202406032042194_PopulateCarTable.resx">
+      <DependentUpon>202406032042194_PopulateCarTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\CarRentalContext\202406041954065_AddImagePathCarTable.resx">
+      <DependentUpon>202406041954065_AddImagePathCarTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\CarRentalContext\202406041958527_AddImagePathCarTable2.resx">
+      <DependentUpon>202406041958527_AddImagePathCarTable2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\CarRentalContext\202406042006426_ChangedCapacity.resx">
+      <DependentUpon>202406042006426_ChangedCapacity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\CarRentalContext\202406042114039_AddedCarAvailability.resx">
+      <DependentUpon>202406042114039_AddedCarAvailability.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\SessionContext\202406021039486_upd11.resx">
       <DependentUpon>202406021039486_upd11.cs</DependentUpon>

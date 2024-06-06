@@ -12,5 +12,6 @@ namespace TWProject.Domain.Entities.User
         public bool Status { get; set; }
         public string StatusMsg { get; set; }
         public URoles Role {  get; set; }
+        public bool IsAdmin { get; set; }
     }
 }

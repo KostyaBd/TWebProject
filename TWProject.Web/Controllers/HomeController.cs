@@ -5,18 +5,39 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using TWProject.BusinessLogic.DB;
+using TWProject.BusinessLogic.Interfaces;
 using TWProject.Domain.Entities.Booking;
+using TWProject.Web.Models;
 
 namespace TWProject.Web.Controllers
 {
 	public class HomeController : Controller
 	{
+		private readonly ISession _session;
+		public HomeController()
+		{
+			var bl = new BusinessLogic.BusinessLogic();
+			_session = bl.GetSessionBL();
+		}
+
         private CarRentalContext db = new CarRentalContext();
         public ActionResult Index()
         {
-            return View();
+	        var getCars = _session.GetAllCars();
+	        var cars = getCars.Select(c => new CarListing
+	        {
+                Mark = c.Mark,
+                Model = c.Model,
+                ProductionYear = c.ProductionYear,
+                PricePerDay = c.PricePerDay,
+                EnginePower = c.EnginePower,
+                ImagePath = c.ImagePath
+	        });
+            return View(cars);
         }
 
+      
+        [HttpPost]
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
@@ -24,24 +45,9 @@ namespace TWProject.Web.Controllers
             return View();
         }
 
-        public ActionResult Listing()
+       /* public ActionResult Listing()
         {
             ViewBag.Message = "All available cars:";
-
-            return View(db.Cars.ToList());
-        }
-
-        /*public ActionResult Listing()
-        {
-            if (User.Identity.IsAuthenticated)
-            {
-                ViewBag.Message = "All available cars:";
-                return RedirectToAction("Listing", "Home");
-            }
-            else
-            {
-                return RedirectToAction("Index", "Login");
-            }
         }*/
 
         public ActionResult Contact()
