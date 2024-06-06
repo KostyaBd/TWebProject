@@ -45,25 +45,26 @@ namespace TWProject.Controllers
 
                 if (userLogin.Status)
                 {
-                    HttpCookie cookie = _session.GenCookie(login.Credential);
-                    cookie.HttpOnly = true; 
-                    cookie.Expires = DateTime.Now.AddHours(1); 
-                    ControllerContext.HttpContext.Response.Cookies.Add(cookie);
+					if (userLogin.IsAdmin)
+					{
+						System.Web.HttpContext.Current.Session["LoginStatus"] = "login";
+						HttpCookie cookie = _session.GenCookie(login.Credential);
+						ControllerContext.HttpContext.Response.Cookies.Add(cookie);
+						return RedirectToAction("Index", "Admin");
+					}
 
-                   
-                    if (userLogin.Role == URoles.Admin)
-                    {
-                        return RedirectToAction("Index", "Admin");
-                    }
-                    else
-                    {
-                        return RedirectToAction("Index", "Home");
-                    }
-                }
+					else
+					{
+						System.Web.HttpContext.Current.Session["LoginStatus"] = "login";
+						HttpCookie cookie = _session.GenCookie(login.Credential);
+						ControllerContext.HttpContext.Response.Cookies.Add(cookie);
+						return RedirectToAction("Index", "Home");
+					}
+				}
                 else
                 {
                     ModelState.AddModelError("", userLogin.StatusMsg);
-                    return View("Login"); 
+                    return View("Index"); 
                 }
             }
 
@@ -81,10 +82,12 @@ namespace TWProject.Controllers
             {
                 var cookie = new HttpCookie("X-KEY");
                 cookie.Expires = DateTime.Now.AddDays(-1); 
-                Response.Cookies.Add(cookie); 
-            }
+                Response.Cookies.Add(cookie);
+                System.Web.HttpContext.Current.Session["LoginStatus"] = "logout";
 
-            return RedirectToAction("Index", "Home");
+			}
+
+			return RedirectToAction("Index", "Home");
         }
     }
 }

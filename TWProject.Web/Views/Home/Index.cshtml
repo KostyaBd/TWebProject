@@ -1,7 +1,7 @@
 ﻿@{
     ViewBag.Title = "CarRent";
 }
-
+@model IEnumerable<TWProject.Web.Models.CarListing>
 <div class="hero" style="background-image: url('/images/hero_1_a.jpg');">
 
     <div class="container">
@@ -87,9 +87,8 @@
         </div>
     </div>
 </div>
-
-
-
+@{
+    int count = 0;
 <div class="site-section bg-light">
     <div class="container">
         <div class="row">
@@ -98,30 +97,29 @@
                 <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </div>
         </div>
-
-
         <div class="row">
+        @foreach (var car in Model)
+        {
             <div class="col-md-6 col-lg-4 mb-4">
-
                 <div class="listing d-block  align-items-stretch">
                     <div class="listing-img h-100 mr-4">
-                        <img src="/images/car_6.jpg" alt="Image" class="img-fluid">
+                        <img src="@car.ImagePath" alt="Image" class="img-fluid">
                     </div>
                     <div class="listing-contents h-100">
-                        <h3>Mitsubishi Pajero</h3>
+                        <h3>@car.Mark @car.Model</h3>
 
                         <div class="d-block d-md-flex mb-3 border-bottom pb-3">
                             <div class="listing-feature pr-4">
-                                <span class="caption">Luggage:</span>
-                                <span class="number">8</span>
+                                <span class="caption">Production Year:</span>
+                                <span class="number">@car.ProductionYear</span>
                             </div>
                             <div class="listing-feature pr-4">
-                                <span class="caption">Doors:</span>
-                                <span class="number">4</span>
+                                <span class="caption">Engine Power</span>
+                                <span class="number">@car.EnginePower</span>
                             </div>
                             <div class="listing-feature pr-4">
-                                <span class="caption">Passenger:</span>
-                                <span class="number">4</span>
+                                <span class="caption">Price</span>
+                                <span class="number">$@car.PricePerDay</span>
                             </div>
                         </div>
 
@@ -129,157 +127,13 @@
 
                 </div>
             </div>
-
-            <div class="col-md-6 col-lg-4 mb-4">
-
-                <div class="listing d-block  align-items-stretch">
-                    <div class="listing-img h-100 mr-4">
-                        <img src="/images/car_5.jpg" alt="Image" class="img-fluid">
-                    </div>
-                    <div class="listing-contents h-100">
-                        <h3>Nissan Moco</h3>
-
-                        <div class="d-block d-md-flex mb-3 border-bottom pb-3">
-                            <div class="listing-feature pr-4">
-                                <span class="caption">Luggage:</span>
-                                <span class="number">8</span>
-                            </div>
-                            <div class="listing-feature pr-4">
-                                <span class="caption">Doors:</span>
-                                <span class="number">4</span>
-                            </div>
-                            <div class="listing-feature pr-4">
-                                <span class="caption">Passenger:</span>
-                                <span class="number">4</span>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-
-
-            <div class="col-md-6 col-lg-4 mb-4">
-
-                <div class="listing d-block  align-items-stretch">
-                    <div class="listing-img h-100 mr-4">
-                        <img src="/images/car_4.jpg" alt="Image" class="img-fluid">
-                    </div>
-                    <div class="listing-contents h-100">
-                        <h3>Honda Fitta</h3>
-
-                        <div class="d-block d-md-flex mb-3 border-bottom pb-3">
-                            <div class="listing-feature pr-4">
-                                <span class="caption">Luggage:</span>
-                                <span class="number">8</span>
-                            </div>
-                            <div class="listing-feature pr-4">
-                                <span class="caption">Doors:</span>
-                                <span class="number">4</span>
-                            </div>
-                            <div class="listing-feature pr-4">
-                                <span class="caption">Passenger:</span>
-                                <span class="number">4</span>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4 mb-4">
-
-                <div class="listing d-block  align-items-stretch">
-                    <div class="listing-img h-100 mr-4">
-                        <img src="/images/car_3.jpg" alt="Image" class="img-fluid">
-                    </div>
-                    <div class="listing-contents h-100">
-                        <h3>Skoda Laura</h3>
-
-                        <div class="d-block d-md-flex mb-3 border-bottom pb-3">
-                            <div class="listing-feature pr-4">
-                                <span class="caption">Luggage:</span>
-                                <span class="number">8</span>
-                            </div>
-                            <div class="listing-feature pr-4">
-                                <span class="caption">Doors:</span>
-                                <span class="number">4</span>
-                            </div>
-                            <div class="listing-feature pr-4">
-                                <span class="caption">Passenger:</span>
-                                <span class="number">4</span>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4 mb-4">
-
-                <div class="listing d-block  align-items-stretch">
-                    <div class="listing-img h-100 mr-4">
-                        <img src="/images/car_2.jpg" alt="Image" class="img-fluid">
-                    </div>
-                    <div class="listing-contents h-100">
-                        <h3>Mazda LaPuta</h3>
-
-                        <div class="d-block d-md-flex mb-3 border-bottom pb-3">
-                            <div class="listing-feature pr-4">
-                                <span class="caption">Luggage:</span>
-                                <span class="number">8</span>
-                            </div>
-                            <div class="listing-feature pr-4">
-                                <span class="caption">Doors:</span>
-                                <span class="number">4</span>
-                            </div>
-                            <div class="listing-feature pr-4">
-                                <span class="caption">Passenger:</span>
-                                <span class="number">4</span>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-
-
-            <div class="col-md-6 col-lg-4 mb-4">
-
-                <div class="listing d-block  align-items-stretch">
-                    <div class="listing-img h-100 mr-4">
-                        <img src="/images/car_1.jpg" alt="Image" class="img-fluid">
-                    </div>
-                    <div class="listing-contents h-100">
-                        <h3>Buick LaCrosse</h3>
-
-                        <div class="d-block d-md-flex mb-3 border-bottom pb-3">
-                            <div class="listing-feature pr-4">
-                                <span class="caption">Luggage:</span>
-                                <span class="number">8</span>
-                            </div>
-                            <div class="listing-feature pr-4">
-                                <span class="caption">Doors:</span>
-                                <span class="number">4</span>
-                            </div>
-                            <div class="listing-feature pr-4">
-                                <span class="caption">Passenger:</span>
-                                <span class="number">4</span>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-
+        }
         </div>
+
     </div>
 </div>
+}
+
 
 <div class="site-section">
     <div class="container">

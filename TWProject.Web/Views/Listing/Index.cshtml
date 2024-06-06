@@ -1,0 +1,122 @@
+﻿@model TWProject.Web.Models.CarListingViewModel
+@using TWProject.Web.Models
+
+@{
+        Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .available {
+        background-color: green;
+    }
+
+    .unavailable {
+        background-color: gray;
+    }
+</style>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Listings</title>
+</head>
+<body>
+    <div class="site-section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <h2 class="section-heading"><strong>Car Listings</strong></h2>
+                    <br />
+                </div>
+            </div>
+
+            @for (var i = 0; i < Model.Cars.Count(); i += 3)
+            {
+            <div class="row">
+                @foreach (var car in Model.Cars.Skip(i).Take(3))
+                 {
+                <div class="col-md-4 mb-4">
+                    <div class="listing d-block align-items-stretch">
+                        <div class="listing-img h-100 mr-4">
+                            <img src="@car.ImagePath" alt="Image" class="img-fluid">
+                        </div>
+                        <div class="listing-contents h-100">
+                            <h3>@car.Mark @car.Model</h3>
+
+                            <div class="d-block d-md-flex mb-3 border-bottom pb-3">
+                                <div class="listing-feature pr-4">
+                                    <span class="caption">Production Year:</span>
+                                    <span class="number">@car.ProductionYear</span>
+                                </div>
+                                <div class="listing-feature pr-4">
+                                    <span class="caption">Body:</span>
+                                    <span class="number">@car.BodyType</span>
+                                </div>
+                                <div class="listing-feature pr-4">
+                                    <span class="caption">Seats:</span>
+                                    <span class="number">@car.SeatsNum</span>
+                                </div>
+                            </div>
+
+                            <div class="d-block d-md-flex mb-3 border-bottom pb-3">
+                                <div class="listing-feature pr-4">
+                                    <span class="caption">Color:</span>
+                                    <span class="number">@car.Color</span>
+                                </div>
+                                <div class="listing-feature pr-4">
+                                    <span class="caption">Odometer:</span>
+                                    <span class="number">@car.Odometer km</span>
+                                </div>
+                                <div class="listing-feature pr-4">
+                                    <span class="caption">Engine Power:</span>
+                                    <span class="number">@car.EnginePower</span>
+                                </div>
+                            </div>
+
+                            <div class="d-block d-md-flex mb-3 border-bottom pb-3">
+                                <div class="listing-feature pr-4">
+                                    <span class="caption">Engine Capacity:</span>
+                                    <span class="number">@car.EngineCapacity</span>
+                                </div>
+                                <div class="listing-feature pr-4">
+                                    <span class="caption">Price:</span>
+                                    <span class="number">$@car.PricePerDay</span>
+                                </div>
+                                <div class="listing-feature pr-4">
+                                    <span class="caption">Gearbox:</span>
+                                    <span class="number">@car.GearboxType</span>
+                                </div>
+                            </div>
+
+                            <div class="d-block d-md-flex mb-3 border-bottom pb-3">
+                                <div class="listing-feature pr-4">
+                                    <span class="caption">Fuel:</span>
+                                    <span class="number">@car.FuelType</span>
+                                </div>
+                                @if (car.IsAvailable)
+                                 {
+                                <div class="listing-feature pr-4">
+                                    @using (Html.BeginForm("Index", "Booking", FormMethod.Post))
+                                     {
+                                    <input type="hidden" name="carId" value="@car.CarId" />
+                                    <button type="submit" class="btn btn-success">Available</button>
+                                     }
+                                </div>
+                                  }
+                                  else
+                                  {
+                                <div class="listing-feature pr-4">
+                                    <button type="button" class="btn btn-secondary" disabled>Not Available</button>
+                                </div>
+                                  }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 }
+            </div>
+             }
+        </div>
+    </div>
+</body>
+</html>

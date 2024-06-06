@@ -3,6 +3,10 @@ using TWProject.Domain.Entities.User;
 using TWProject.BusinessLogic.Core;
 using TWProject.BusinessLogic.Interfaces;
 using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using TWProject.Domain.Entities.Booking;
+using TWProject.Domain.Entities.Car;
 
 namespace TWProject.BusinessLogic
 {
@@ -29,5 +33,22 @@ namespace TWProject.BusinessLogic
         {
             return UserCookie(apiCookieValue);
         }
-    }
+
+        public IEnumerable<CarDBTable> GetAllCars()
+        {
+	        return GetAllCarsAction();
+        }
+
+        public IEnumerable<BookingDBTable> GetBookingDates()
+        {
+	        return GetBookingDatesAction();
+        }
+
+        public Task<UBookingResp> UserBooking(UBookingData data)
+        {
+	        return UserBookingAction(data);
+        }
+
+
+	}
 }

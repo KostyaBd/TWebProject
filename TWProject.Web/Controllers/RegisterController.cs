@@ -15,10 +15,11 @@ namespace TWProject.Web.Controllers
 {
     public class RegisterController : Controller
     {
-        private readonly UserApi _userApi;
+        private readonly ISession _session;
         public RegisterController()
         {
-            _userApi = new UserApi();
+	        var bl = new BusinessLogic.BusinessLogic();
+	        _session = bl.GetSessionBL();
         }
         // GET: Register
         public ActionResult Index()
@@ -38,7 +39,7 @@ namespace TWProject.Web.Controllers
                     Password = register.Password,
                     Email = register.Email
                 };
-                var userRegister = _userApi.UserRegistrationLogic(data);
+                var userRegister = _session.UserRegistration(data);
                 if (userRegister.Status)
                 {
                     return RedirectToAction("Index", "Login");
