@@ -125,6 +125,10 @@
     <Compile Include="Entities\Payment\PaymentModel.cs" />
     <Compile Include="Entities\User\Session.cs" />
     <Compile Include="Entities\User\UBookingData.cs" />
+    <Compile Include="Entities\User\UChangeEmailData.cs" />
+    <Compile Include="Entities\User\UChangeEmailResp.cs" />
+    <Compile Include="Entities\User\UChangePasswordData.cs" />
+    <Compile Include="Entities\User\UChangePasswordResp.cs" />
     <Compile Include="Entities\User\UDBTable.cs" />
     <Compile Include="Entities\User\ULoginData.cs" />
     <Compile Include="Entities\User\ULoginResp.cs" />
