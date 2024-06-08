@@ -96,11 +96,8 @@
                                 @if (car.IsAvailable)
                                  {
                                 <div class="listing-feature pr-4">
-                                    @using (Html.BeginForm("Index", "Booking", FormMethod.Post))
-                                     {
                                     <input type="hidden" name="carId" value="@car.CarId" />
                                     <button type="submit" class="btn btn-success">Available</button>
-                                     }
                                 </div>
                                   }
                                   else

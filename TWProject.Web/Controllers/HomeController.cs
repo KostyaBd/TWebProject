@@ -37,7 +37,6 @@ namespace TWProject.Web.Controllers
         }
 
       
-        [HttpPost]
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
@@ -57,7 +56,7 @@ namespace TWProject.Web.Controllers
             return View();
         }
 
-        public ActionResult Payment(int id, decimal price, string mark, string model)
+       /* public ActionResult Payment(int id, decimal price, string mark, string model)
         {
             ViewBag.Price = price;
             ViewBag.Mark = mark;
@@ -91,7 +90,7 @@ namespace TWProject.Web.Controllers
             return RedirectToAction("ThankYou");
         }
 
-
+*/
 
     }
 }

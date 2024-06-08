@@ -44,8 +44,7 @@
                 @Html.DropDownListFor(model => model.CarId, (SelectList)ViewBag.Cars, "Select a car", new { @class = "form-control" })
             </div>
         </div>
-        <button type="submit" class="btn btn-primary" id="submitBtn">Card</button>
-        <a href="@Url.Action("OrderConfirmation", "Booking")" class="btn btn-primary">Cash</a>
+        <button type="submit" class="btn btn-primary" id="submitBtn">Payment</button>
     </div>
 }
 

@@ -1,7 +1,30 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "OrderConfirmation";
 }
 
-<h2>OrderConfirmation</h2>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
 
+        h2, p, a {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<br></br>
+<br></br>
+<h2>Order Confirmation</h2>
+<p>Your booking has been successfully added.</p>
+<a href="@Url.Action("Index", "Home")">Go back to home</a>
+</body>
+</html>

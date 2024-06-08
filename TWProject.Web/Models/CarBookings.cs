@@ -19,6 +19,8 @@ namespace TWProject.Web.Models
 		public int CarId { get; set; }
 		public string Username { get; set; }
 		public string Email { get; set; }
+		public string Cookie { get; set; }
+		public int UserId { get; set; }
 
 	}
 }

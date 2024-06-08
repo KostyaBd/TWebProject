@@ -15,5 +15,7 @@ namespace TWProject.Domain.Entities.User
 		public UDBTable User { get; set; }
 		public string Email { get; set; }
 		public int CarId { get; set; }
+		public string CookieString { get; set; }
+		public int UserId { get; set; }
 	}
 }
