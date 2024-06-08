@@ -89,6 +89,8 @@
 </div>
 @{
     int count = 0;
+}
+
 <div class="site-section bg-light">
     <div class="container">
         <div class="row">
@@ -98,41 +100,41 @@
             </div>
         </div>
         <div class="row">
-        @foreach (var car in Model)
-        {
-            <div class="col-md-6 col-lg-4 mb-4">
-                <div class="listing d-block  align-items-stretch">
-                    <div class="listing-img h-100 mr-4">
-                        <img src="@car.ImagePath" alt="Image" class="img-fluid">
-                    </div>
-                    <div class="listing-contents h-100">
-                        <h3>@car.Mark @car.Model</h3>
-
-                        <div class="d-block d-md-flex mb-3 border-bottom pb-3">
-                            <div class="listing-feature pr-4">
-                                <span class="caption">Production Year:</span>
-                                <span class="number">@car.ProductionYear</span>
+            @foreach (var car in Model)
+            {
+                if (count < 3) // Display only 3 cars
+                {
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="listing d-block align-items-stretch">
+                            <div class="listing-img h-100 mr-4">
+                                <img src="@car.ImagePath" alt="Image" class="img-fluid">
                             </div>
-                            <div class="listing-feature pr-4">
-                                <span class="caption">Engine Power</span>
-                                <span class="number">@car.EnginePower</span>
-                            </div>
-                            <div class="listing-feature pr-4">
-                                <span class="caption">Price</span>
-                                <span class="number">$@car.PricePerDay</span>
+                            <div class="listing-contents h-100">
+                                <h3>@car.Mark @car.Model</h3>
+                                <div class="d-block d-md-flex mb-3 border-bottom pb-3">
+                                    <div class="listing-feature pr-4">
+                                        <span class="caption">Production Year:</span>
+                                        <span class="number">@car.ProductionYear</span>
+                                    </div>
+                                    <div class="listing-feature pr-4">
+                                        <span class="caption">Engine Power</span>
+                                        <span class="number">@car.EnginePower</span>
+                                    </div>
+                                    <div class="listing-feature pr-4">
+                                        <span class="caption">Price</span>
+                                        <span class="number">$@car.PricePerDay</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
                     </div>
-
-                </div>
-            </div>
-        }
+                    count++; // Increment the counter
+                }
+            }
         </div>
-
     </div>
 </div>
-}
+
 
 
 <div class="site-section">

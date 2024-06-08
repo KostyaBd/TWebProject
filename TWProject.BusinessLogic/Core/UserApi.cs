@@ -262,16 +262,15 @@ namespace TWProject.BusinessLogic.Core
 				},
 				Mode = "payment",
 				SuccessUrl = "http://localhost:58516/Booking/OrderConfirmation",
-				CancelUrl = "http://localhost:58516/Booking/Login"
+				CancelUrl = "http://localhost:58516/Booking/Index"
 			};
-
 			var service = new SessionService();
 			Stripe.Checkout.Session session = await service.CreateAsync(options);
 			return session;
 		}
+
 		internal async Task<UBookingResp> UserBookingAction(UBookingData data)
         {
-
 	        try
 	        {
 		        using (var context = new CarRentalContext())
