@@ -7,6 +7,10 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using TWProject.Domain.Entities.Booking;
 using TWProject.Domain.Entities.Car;
+using AutoMapper;
+using System.Data.Entity;
+using TWProject.BusinessLogic.DB;
+using System.Linq;
 
 namespace TWProject.BusinessLogic
 {
@@ -49,6 +53,26 @@ namespace TWProject.BusinessLogic
 	        return UserBookingAction(data);
         }
 
+          public UChangePasswordResp ChangePassword(UChangePasswordData data)
+          {
+               var user = GetUserByCookie(HttpContext.Current.Request.Cookies["X-KEY"]?.Value);
+               if (user == null)
+               {
+                    return new UChangePasswordResp { Success = false, ErrorMessage = "User not found." };
+               }
 
-	}
+               return ChangePasswordAction(data);
+          }
+
+          public UChangeEmailResp ChangeEmail(UChangeEmailData data)
+          {
+               var user = GetUserByCookie(HttpContext.Current.Request.Cookies["X-KEY"]?.Value);
+               if (user == null)
+               {
+                    return new UChangeEmailResp { Success = false, ErrorMessage = "User not found." };
+               }
+
+               return ChangeEmailAction(data);
+          }
+     }
 }

@@ -346,5 +346,67 @@ namespace TWProject.BusinessLogic.Core
 
 	        return price;
         }
-	}
+
+          internal UChangePasswordResp ChangePasswordAction(UChangePasswordData changePasswordData)
+          {
+               if (changePasswordData.NewPassword != changePasswordData.ConfirmPassword)
+               {
+                    return new UChangePasswordResp { Success = false, ErrorMessage = "The new password and confirmation password do not match." };
+               }
+
+               using (var context = new CarRentalContext())
+               {
+                    var currentUser = context.User.FirstOrDefault(u => u.Email == changePasswordData.Email);
+                    if (currentUser == null)
+                    {
+                         return new UChangePasswordResp { Success = false, ErrorMessage = "User not found." };
+                    }
+
+                    if (LoginHelper.HashGen(changePasswordData.CurrentPassword) != currentUser.Password)
+                    {
+                         return new UChangePasswordResp { Success = false, ErrorMessage = "Current password is incorrect." };
+                    }
+
+                    currentUser.Password = LoginHelper.HashGen(changePasswordData.NewPassword);
+                    context.Entry(currentUser).State = System.Data.Entity.EntityState.Modified;
+                    context.SaveChanges();
+
+                    return new UChangePasswordResp { Success = true };
+               }
+          }
+
+          internal UChangeEmailResp ChangeEmailAction(UChangeEmailData changeEmailData)
+          {
+               using (var context = new CarRentalContext())
+               {
+                    var currentUser = context.User.FirstOrDefault(u => u.Email == changeEmailData.CurrentEmail);
+                    if (currentUser == null)
+                    {
+                         return new UChangeEmailResp { Success = false, ErrorMessage = "User not found." };
+                    }
+
+                    if (LoginHelper.HashGen(changeEmailData.Password) != currentUser.Password)
+                    {
+                         return new UChangeEmailResp { Success = false, ErrorMessage = "Password is incorrect." };
+                    }
+
+                    if (changeEmailData.NewEmail == changeEmailData.CurrentEmail)
+                    {
+                         return new UChangeEmailResp { Success = false, ErrorMessage = "New email cannot be the same as the current email." };
+                    }
+
+                    var existingUser = context.User.FirstOrDefault(u => u.Email == changeEmailData.NewEmail);
+                    if (existingUser != null)
+                    {
+                         return new UChangeEmailResp { Success = false, ErrorMessage = "Email already exists." };
+                    }
+
+                    currentUser.Email = changeEmailData.NewEmail;
+                    context.Entry(currentUser).State = System.Data.Entity.EntityState.Modified;
+                    context.SaveChanges();
+
+                    return new UChangeEmailResp { Success = true };
+               }
+          }
+     }
 }

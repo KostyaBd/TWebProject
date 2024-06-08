@@ -25,5 +25,7 @@ namespace TWProject.BusinessLogic.Interfaces
 
         Task<UBookingResp> UserBooking(UBookingData data);
 
-	}
+        UChangePasswordResp ChangePassword(UChangePasswordData data);
+        UChangeEmailResp ChangeEmail(UChangeEmailData data);
+     }
 }
