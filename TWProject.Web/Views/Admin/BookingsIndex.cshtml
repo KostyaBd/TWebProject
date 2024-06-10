@@ -1,0 +1,182 @@
+﻿@model IEnumerable<TWProject.Domain.Entities.Booking.BookingDBTable>
+
+@{
+    ViewBag.Title = "BookingsIndex";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+
+}
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+
+    :root {
+        --background-color1: #fafaff;
+        --background-color2: #ffffff;
+        --background-color3: #ededed;
+        --background-color4: #bde1ff;
+        --primary-color: #4b49ac;
+        --secondary-color: #0c007d;
+        --Border-color: #3f0097;
+        --one-use-color: #3f0097;
+        --two-use-color: #5500cb;
+    }
+
+    body {
+        background-color: var(--background-color4);
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    header {
+        height: 70px;
+        width: 100vw;
+        padding: 0 30px;
+        background-color: var(--background-color1);
+        position: fixed;
+        z-index: 100;
+        box-shadow: 1px 1px 15px rgba(161, 182, 253, 0.825);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 27px;
+        font-weight: 600;
+        color: rgb(47, 141, 70);
+    }
+
+
+
+    .main {
+        height: calc(100vh - 70px);
+        width: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding: 40px 30px 30px 30px;
+    }
+
+
+
+    .topic-heading {
+        font-size: 30px;
+        letter-spacing: 3px;
+    }
+
+    .report-container {
+        min-height: 300px;
+        max-width: 1200px;
+        margin: 70px auto 0px auto;
+        background-color: #ffffff;
+        border-radius: 30px;
+        box-shadow: 3px 3px 10px rgb(188, 188, 188);
+        padding: 0px 20px 20px 20px;
+    }
+
+    .report-header {
+        height: 80px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 20px 10px 20px;
+        border-bottom: 2px solid rgba(0, 66, 135, 245);
+    }
+
+    .view {
+        height: 35px;
+        width: 90px;
+        border-radius: 8px;
+        background-color: #2691d9;
+        color: white;
+        font-size: 15px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .report-body {
+        max-width: 1160px;
+        overflow-x: auto;
+        padding: 20px;
+    }
+</style>
+
+
+<div class="main">
+
+
+    <div class="report-container">
+        <div class="report-header">
+            <h1 class="recent-Articles">Bookings List</h1>
+            @*  <a href="@Url.Action("Create", "Admin")">
+                    <button class="view">Add new Car</button>
+                </a>*@
+        </div>
+        <div class="report-body">
+            <table class="table">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.BookingRecievedDate)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.BookingReturnDate)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.TotalPrice)
+                    </th>
+                 @*   <th>
+                        @Html.DisplayNameFor(model => model.Car)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.User)
+                    </th>*@
+                    <th></th>
+                </tr>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.BookingRecievedDate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.BookingReturnDate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TotalPrice)
+                        </td>
+                       @* <td>
+                            @Html.DisplayFor(modelItem => item.Car)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.User)
+                        </td>*@
+                        <td>
+                            @Html.ActionLink("Delete", "BookingsDelete", new { id = item.BookingId })
+                        </td>
+                    </tr>
+                }
+
+            </table>
+
+
+
+
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+

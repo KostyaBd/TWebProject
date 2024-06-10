@@ -5,6 +5,8 @@ using TWProject.BusinessLogic.Interfaces;
 using TWProject.Web.Models;
 using TWProject.Domain.Entities.User;
 using System.Threading.Tasks;
+using System.Collections.Generic;
+using TWProject.Domain.Entities.Booking;
 
 namespace TWProject.Web.Controllers
 {
@@ -97,8 +99,31 @@ namespace TWProject.Web.Controllers
 
                return View(model);
           }
+        public ActionResult UserBookings()
+        {
+            if (!IsUserLoggedIn())
+            {
+                return RedirectToAction("Index", "Login");
+            }
 
-          private bool IsUserLoggedIn()
+            var user = GetCurrentUser();
+            if (user == null)
+            {
+                return RedirectToAction("Index", "Login");
+            }
+
+            var bookings = _session.GetBookingsByUser(user.Id);
+
+            return View(bookings);
+        }
+
+        private UserMini GetCurrentUser()
+        {
+            var cookieValue = HttpContext.Request.Cookies["X-KEY"]?.Value;
+            return _session.GetUserByCookie(cookieValue);
+        }
+
+        private bool IsUserLoggedIn()
           {
                var loginStatus = System.Web.HttpContext.Current.Session["LoginStatus"] as string;
                return loginStatus == "login";

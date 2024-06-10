@@ -14,17 +14,17 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-:root {
-  --background-color1: #fafaff;
-  --background-color2: #ffffff;
-  --background-color3: #ededed;
-  --background-color4: #cad7fda4;
-  --primary-color: #4b49ac;
-  --secondary-color: #0c007d;
-  --Border-color: #3f0097;
-  --one-use-color: #3f0097;
-  --two-use-color: #5500cb;
-}
+        :root {
+            --background-color1: #fafaff;
+            --background-color2: #ffffff;
+            --background-color3: #ededed;
+            --background-color4: #bde1ff;
+            --primary-color: #4b49ac;
+            --secondary-color: #0c007d;
+            --Border-color: #3f0097;
+            --one-use-color: #3f0097;
+            --two-use-color: #5500cb;
+        }
 body {
   background-color: var(--background-color4);
   max-width: 100%;
@@ -83,25 +83,19 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 20px 20px 10px 20px;
-  border-bottom: 2px solid rgba(0, 20, 151, 0.59);
+  border-bottom: 2px solid rgba(0, 66, 135, 245);
 }
 
-.recent-Articles {
-  font-size: 30px;
-  font-weight: 600;
-  color: #5500cb;
-}
-
-.view {
-  height: 35px;
-  width: 90px;
-  border-radius: 8px;
-  background-color: #5500cb;
-  color: white;
-  font-size: 15px;
-  border: none;
-  cursor: pointer;
-}
+         .view {
+            height: 35px;
+            width: 90px;
+            border-radius: 8px;
+            background-color: #2691d9;
+            color: white;
+            font-size: 15px;
+            border: none;
+            cursor: pointer;
+        }
 
 .report-body {
   max-width: 1160px;
@@ -218,8 +212,8 @@ header {
                                 </td>
                                 <td>
                                     @Html.ActionLink("Edit", "Edit", new { id = item.CarId })
-                                    @Html.ActionLink("Details", "Details", new { id = item.CarId })
-                                    @Html.ActionLink("Delete", "Delete", new { id = item.CarId })
+@*                                    @Html.ActionLink("Details", "Details", new { id = item.CarId })
+*@                                    @Html.ActionLink("Delete", "Delete", new { id = item.CarId })
                                 </td>
                             </tr>
                         }

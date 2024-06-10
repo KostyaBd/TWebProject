@@ -1,16 +1,17 @@
 ﻿@{
      Layout = "~/Views/Shared/_LayoutUser.cshtml";
-     ViewBag.Title = "Index";
+     ViewBag.Title = "CarRental";
 }
 
 <br />
 <br />
 <br />
 <div class="action-links-container">
-     <h2>UserPanel</h2>
-     @Html.ActionLink("Change Password", "ChangePassword", "User", null, new { @class = "action-link" })
-     @Html.ActionLink("Change Email", "ChangeEmail", "User", null, new { @class = "action-link" })
-</div>
+    <h2>UserPanel</h2>
+    @Html.ActionLink("Change Password", "ChangePassword", "User", null, new { @class = "action-link" })
+    @Html.ActionLink("Change Email", "ChangeEmail", "User", null, new { @class = "action-link" })
+@*    @Html.ActionLink("Manage Bookings", "UserBookings", "User", null, new { @class = "action-link" })
+*@</div>
 
 <style>
      .action-links-container {

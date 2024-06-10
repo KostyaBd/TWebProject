@@ -377,3 +377,19 @@ C:\Users\Doein\Source\Repos\KostyaBd\TWebProject\TWProject.BusinessLogic\obj\Deb
 C:\Users\Doein\Source\Repos\KostyaBd\TWebProject\TWProject.BusinessLogic\obj\Debug\TWProject.BusinessLogic.csproj.CopyComplete
 C:\Users\Doein\Source\Repos\KostyaBd\TWebProject\TWProject.BusinessLogic\obj\Debug\TWProject.BusinessLogic.dll
 C:\Users\Doein\Source\Repos\KostyaBd\TWebProject\TWProject.BusinessLogic\obj\Debug\TWProject.BusinessLogic.pdb
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\RestSharp.dll
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\Stripe.dll
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\Stripe.net.dll
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\System.Threading.Tasks.Extensions.dll
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\RestSharp.xml
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\Stripe.net.xml
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\bin\Debug\System.Threading.Tasks.Extensions.xml
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\obj\Debug\TWProject.BusinessLogic.Migrations.CarRentalContext.ModifyUserTable.resources
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\obj\Debug\TWProject.BusinessLogic.Migrations.CarRentalContext.ChangedEnginePowerType.resources
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\obj\Debug\TWProject.BusinessLogic.Migrations.CarRentalContext.PopulateCarTable.resources
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\obj\Debug\TWProject.BusinessLogic.Migrations.CarRentalContext.AddImagePathCarTable.resources
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\obj\Debug\TWProject.BusinessLogic.Migrations.CarRentalContext.AddImagePathCarTable2.resources
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\obj\Debug\TWProject.BusinessLogic.Migrations.CarRentalContext.ChangedCapacity.resources
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.BusinessLogic\obj\Debug\TWProject.BusinessLogic.Migrations.CarRentalContext.AddedCarAvailability.resources

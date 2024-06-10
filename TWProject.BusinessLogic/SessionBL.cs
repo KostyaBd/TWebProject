@@ -75,7 +75,21 @@ namespace TWProject.BusinessLogic
                return ChangeEmailAction(data);
           }
 
-        
+        public IEnumerable<BookingDBTable> GetBookingsByUserId(int userId)
+        {
+            using (var context = new CarRentalContext())
+            {
+                return context.Bookings.Where(b => b.User.UserId == userId).ToList();
+            }
+        }
 
-	}
+        public IEnumerable<BookingDBTable> GetBookingsByUser(int userId)
+        {
+            using (var db = new CarRentalContext())
+            {
+                return db.Bookings.Where(b => b.User.UserId == userId).ToList();
+            }
+        }
+
+    }
 }

@@ -1,0 +1,55 @@
+﻿@model TWProject.Domain.Entities.Booking.BookingDBTable
+
+@{
+    ViewBag.Title = "BookingsDelete";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+
+}
+
+
+<div class="container">
+    <div class="col-lg-10" style="margin-top: 100px;">
+
+        <h3>Are you sure you want to delete this?</h3>
+        <div>
+          
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.BookingRecievedDate)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.BookingRecievedDate)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.BookingReturnDate)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.BookingReturnDate)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.TotalPrice)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.TotalPrice)
+                </dd>
+
+            </dl>
+
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-actions no-color">
+                    <input type="submit" value="Delete Booking" class="btn btn-default" /> |
+                    @Html.ActionLink("Back to List", "BookingsIndex")
+                </div>
+            }
+        </div>
+</div>
+</div>

@@ -18,18 +18,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Car Listings</title>
-</head>
+
+@*    <title>Car Listings</title>
+*@</head>
 <body>
     <div class="site-section bg-light">
         <div class="container">
             <div class="row">
                 <div class="col-lg-7">
-                    <h2 class="section-heading"><strong>Car Listings</strong></h2>
-                    <br />
+@*                    <h2 class="section-heading"><strong>Car Listings</strong></h2>
+*@                    <br />
                 </div>
             </div>
-
+            <br />
+            <br />
             @for (var i = 0; i < Model.Cars.Count(); i += 3)
             {
             <div class="row">

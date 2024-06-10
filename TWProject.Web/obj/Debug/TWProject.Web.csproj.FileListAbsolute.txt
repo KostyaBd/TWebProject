@@ -565,3 +565,12 @@ C:\Users\Doein\Source\Repos\KostyaBd\TWebProject\TWProject.Web\obj\Debug\TWProje
 C:\Users\Doein\Source\Repos\KostyaBd\TWebProject\TWProject.Web\obj\Debug\TWProject.Web.csproj.CopyComplete
 C:\Users\Doein\Source\Repos\KostyaBd\TWebProject\TWProject.Web\obj\Debug\TWProject.Web.dll
 C:\Users\Doein\Source\Repos\KostyaBd\TWebProject\TWProject.Web\obj\Debug\TWProject.Web.pdb
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.Web\bin\Microsoft.Bcl.AsyncInterfaces.dll
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.Web\bin\RestSharp.dll
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.Web\bin\Stripe.dll
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.Web\bin\Stripe.net.dll
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.Web\bin\System.Threading.Tasks.Extensions.dll
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.Web\bin\Microsoft.Bcl.AsyncInterfaces.xml
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.Web\bin\RestSharp.xml
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.Web\bin\Stripe.net.xml
+X:\Workspace\UTM\TWeb - S.Scrob, I.Antohi\TWebProject\TWProject.Web\bin\System.Threading.Tasks.Extensions.xml

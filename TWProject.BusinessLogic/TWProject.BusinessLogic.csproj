@@ -176,7 +176,6 @@
     <Compile Include="Migrations\CarRentalContext\202406042114039_AddedCarAvailability.Designer.cs">
       <DependentUpon>202406042114039_AddedCarAvailability.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\CarRentalContext\Configuration.cs" />
     <Compile Include="Migrations\CarRentalContext\ConfigurationCarRental.cs" />
     <Compile Include="Migrations\SessionContext\202406021039486_upd11.cs" />
     <Compile Include="Migrations\SessionContext\202406021039486_upd11.designer.cs">

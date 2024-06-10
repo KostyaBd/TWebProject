@@ -1,57 +1,61 @@
 ﻿@model TWProject.Web.Models.CarBookings
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "CarRental";
 }
 
-<br />
-<br />
-<br />
-<br />
-@if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
-{
-    <div class="alert alert-danger" role="alert">
-        @ViewBag.ErrorMessage
-    </div>
-}
-@using (Html.BeginForm("Index", "Booking", FormMethod.Post, new { id = "bookingForm" }))
-{
-    <div class="row">
-        <div class="col-lg-7">
-            <h2 class="section-heading" style="text-align:center"><strong>Booking</strong></h2>
-            <br />
-        </div>
-    </div>
-    <div class="bg-white p-md-5 p-4 mb-5 border">
-        <div class="row">
-            <div class="col-md-6 form-group">
-                <label class="text-black font-weight-bold" for="name">Email</label>
-                @Html.TextBoxFor(model => model.Email, new { @class = "form-control", required = "required" })
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 form-group">
-                <label class="text-black font-weight-bold" for="checkin_date">Receive date</label>
-                @Html.TextBoxFor(model => model.BookingRecievedDate, new { @class = "form-control", type = "date", onchange = "updateCheckoutDate();" })
-            </div>
-            <div class="col-md-6 form-group">
-                <label class="text-black font-weight-bold" for="checkout_date">Return date</label>
-                @Html.TextBoxFor(model => model.BookingReturnDate, new { @class = "form-control", type = "date", onchange = "showPrice();" })
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 form-group">
-                <label for="carId" class="font-weight-bold text-black">Car</label>
-                @Html.DropDownListFor(model => model.CarId, (SelectList)ViewBag.Cars, "Select a car", new { @class = "form-control" })
-            </div>
-        </div>
-        <button type="submit" class="btn btn-primary" id="submitBtn">Payment</button>
-    </div>
-}
 
-@section Scripts {
-    <script type="text/javascript">
-        document.getElementById("bookingForm").onsubmit = function () {
-            document.getElementById("submitBtn").disabled = true;
-        };
-    </script>
-}
+<div class="container">
+    <div class="col-lg-10" style="margin-top: 100px;">
+        <br />
+        <br />
+        <br />
+        <br />
+        @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+        {
+            <div class="alert alert-danger" role="alert">
+                @ViewBag.ErrorMessage
+            </div>
+        }
+        @using (Html.BeginForm("Index", "Booking", FormMethod.Post, new { id = "bookingForm" }))
+        {
+            <div class="row">
+                <div class="col-lg-7">
+                    <h2 class="section-heading" style="text-align:center"><strong>Booking</strong></h2>
+                    <br />
+                </div>
+            </div>
+            <div class="bg-white p-md-5 p-4 mb-5 border">
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <label class="text-black font-weight-bold" for="name">Email</label>
+                        @Html.TextBoxFor(model => model.Email, new { @class = "form-control", required = "required" })
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <label class="text-black font-weight-bold" for="checkin_date">Receive date</label>
+                        @Html.TextBoxFor(model => model.BookingRecievedDate, new { @class = "form-control", type = "date", onchange = "updateCheckoutDate();" })
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label class="text-black font-weight-bold" for="checkout_date">Return date</label>
+                        @Html.TextBoxFor(model => model.BookingReturnDate, new { @class = "form-control", type = "date", onchange = "showPrice();" })
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <label for="carId" class="font-weight-bold text-black">Car</label>
+                        @Html.DropDownListFor(model => model.CarId, (SelectList)ViewBag.Cars, "Select a car", new { @class = "form-control" })
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary" id="submitBtn">Payment</button>
+            </div>
+        }
+</div>
+    </div>
+        @section Scripts {
+            <script type="text/javascript">
+                document.getElementById("bookingForm").onsubmit = function () {
+                    document.getElementById("submitBtn").disabled = true;
+                };
+            </script>
+        }

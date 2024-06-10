@@ -190,40 +190,44 @@ namespace TWProject.BusinessLogic.Core
 
 		internal IEnumerable<CarDBTable> GetAllCarsAction()
 		{
-			using (var context = new CarRentalContext())
-			{
-				var cars = context.Cars.ToList();
-				var currentDate = DateTime.Now;
+            using (var context = new CarRentalContext())
+            {
+                var cars = context.Cars.ToList();
+                var currentDate = DateTime.Now;
 
-				var bookings = context.Bookings
-					.Where(b => b.BookingRecievedDate <= currentDate && b.BookingReturnDate >= currentDate)
-					.ToList();
+                var bookings = context.Bookings
+                    .Where(b => b.BookingRecievedDate <= currentDate && b.BookingReturnDate >= currentDate)
+                    .ToList();
 
-				var mappedCars = cars.Select(car => new CarDBTable()
-				{
-					CarId = car.CarId,
-					Mark = car.Mark,
-					Model = car.Model,
-					ProductionYear = car.ProductionYear,
-					BodyType = car.BodyType,
-					SeatsNum = car.SeatsNum,
-					Color = car.Color,
-					Odometer = car.Odometer,
-					EngineCapacity = car.EngineCapacity,
-					EnginePower = car.EnginePower,
-					PricePerDay = car.PricePerDay,
-					GearboxType = car.GearboxType,
-					FuelType = car.FuelType,
-					ImagePath = car.ImagePath,
-					IsAvailable = !bookings.Any(b => b.Car.CarId == car.CarId)
-				});
+                var mappedCars = cars.Select(car => new CarDBTable()
+                {
+                    CarId = car.CarId,
+                    Mark = car.Mark,
+                    Model = car.Model,
+                    ProductionYear = car.ProductionYear,
+                    BodyType = car.BodyType,
+                    SeatsNum = car.SeatsNum,
+                    Color = car.Color,
+                    Odometer = car.Odometer,
+                    EngineCapacity = car.EngineCapacity,
+                    EnginePower = car.EnginePower,
+                    PricePerDay = car.PricePerDay,
+                    GearboxType = car.GearboxType,
+                    FuelType = car.FuelType,
+                    ImagePath = car.ImagePath,
+                    IsAvailable = !bookings.Any(b => b.Car.CarId == car.CarId)
+                });
 
-				return mappedCars;
-			}
-		}
+                return mappedCars;
+            }
+        }
+ 
+
+ 
 
 
-		internal IEnumerable<BookingDBTable> GetBookingDatesAction()
+
+        internal IEnumerable<BookingDBTable> GetBookingDatesAction()
         {
 	        using (var context = new CarRentalContext())
 	        {
