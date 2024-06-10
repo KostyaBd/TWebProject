@@ -108,7 +108,7 @@ namespace TWProject.Web.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult UserEdit([Bind(Include = "UserId,Name,Level,Email,RegistrationDate")] UDBTable uDBTable)
+        public ActionResult UserEdit([Bind(Include = "UserId,Name,level,Email,RegistrationDate")] UDBTable uDBTable)
         {
             if (ModelState.IsValid)
             {

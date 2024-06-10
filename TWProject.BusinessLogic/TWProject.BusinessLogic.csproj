@@ -142,6 +142,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BusinessLogic.cs" />
+    <Compile Include="Core\AdminApi.cs" />
     <Compile Include="DB\CarRentalContext.cs" />
     <Compile Include="DB\SessionContext.cs" />
     <Compile Include="Migrations\CarRentalContext\202406021038029_upd1.cs" />
